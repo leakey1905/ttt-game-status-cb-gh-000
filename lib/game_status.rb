@@ -44,3 +44,8 @@ def draw?(board)
     return false
   end
 end
+
+# check whether game over
+def over?(board)
+
+end
