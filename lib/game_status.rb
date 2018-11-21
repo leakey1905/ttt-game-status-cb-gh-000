@@ -47,5 +47,9 @@ end
 
 # check whether game over
 def over?(board)
-  return won?(board) or draw?(board) or full?(board)
+  if won?(board) or draw?(board) or full?(board)
+    return true
+  else
+    return false
+  end
 end
