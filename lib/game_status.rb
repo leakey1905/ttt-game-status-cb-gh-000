@@ -33,3 +33,7 @@ end
 def full?(board)
   return board.none?{|pos| pos == " " or pos == "" or pos == nil}
 end
+
+# check whether it can be drawn
+def draw?(board)
+end
