@@ -57,5 +57,14 @@ end
 # check winner
 def winner(board)
   if over?(board)
+    i = 0
+    while i < 9
+      if board[WIN_COMBINATIONS[i][0]] == "X" and board[WIN_COMBINATIONS[i][1]] == "X" and board[WIN_COMBINATIONS[i][2]] == "X"
+        return "X"
+      elsif board[WIN_COMBINATIONS[i][0]] == "O" and board[WIN_COMBINATIONS[i][1]] == "O" and board[WIN_COMBINATIONS[i][2]] == "O"
+        return "O"
+      end
+      i += 1
+    end
   end
 end
