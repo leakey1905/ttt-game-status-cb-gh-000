@@ -28,3 +28,7 @@ def won?(board)
 rescue NoMethodError
   return false
 end
+
+# check whether it is full
+def full?(board)
+end
