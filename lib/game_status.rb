@@ -25,5 +25,6 @@ def won?(board)
     end
     i += 1
   end
-return {}
+rescue NoMethodError:
+  return false
 end
