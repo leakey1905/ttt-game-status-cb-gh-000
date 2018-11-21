@@ -31,4 +31,5 @@ end
 
 # check whether it is full
 def full?(board)
+  return board.none?{|pos| pos == " " or pos == "" or pos == nil}
 end
